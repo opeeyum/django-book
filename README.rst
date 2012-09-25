@@ -1,23 +1,43 @@
 Django Book Revival
 ===================
 
-A revival of Django Book, the comprehensive guide to Django, overhauling it for
-Django 1.4 compatibility and keeping it up to date with Django 1.5 and beyond!
+A revival of Django Book, the comprehensive guide to Django.
 
-To build it you need sphinx installed , on debian/ubuntu
+The goal is to overhaul this book with Django 1.4 compatibility and hopefully
+keep it up to date with Django 1.5 and beyond!
 
- sudo apt-get install python-sphinx
+*A current work in progress. If you'd like to help, please do. There's plenty of
+work to be done!*
 
-then type
+Current Status
+--------------
+
+The latest version is always available at ReadTheDocs: http://django-book.readthedocs.org/en/latest/
+
+Sept 2012, still groundwork organization being laid. Much of the book has not been vetted.
+
+Development
+-----------
+
+Assuming you have Python installed, the only dependency is sphinx, available via pip:
+
+ pip install sphinx
+
+Build from the top directory:
 
  make build
 
-it will build the html documentation in
+And now the latest HTML documentation will be waiting in *en/_build/html/*
 
- en/_build/html/
+Contribute
+----------
 
-*A current work in progress. If you'd like to help, please do. There's lots of work to be
-done!*
+Want to contribute some changes?
 
-**View the latest version on RTD:** http://django-book.readthedocs.org/en/latest/
+Pull requests or discussion is pretty open right now, submit what you think
+will help via GitHub.
 
+Meta
+----
+- Home: https://github.com/askedrelic/django-book
+- Authors: https://github.com/askedrelic/django-book/graphs/contributors
