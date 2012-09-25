@@ -26,7 +26,7 @@ Current Status
 
 The latest version is always available at ReadTheDocs: http://django-book.readthedocs.org/en/latest/
 
-See the project issues for more current status:
+See the project milestones for more current status: https://github.com/askedrelic/django-book/issues/milestones
 
 Sept 2012, still groundwork organization being laid. Much of the book has not been vetted.
 
