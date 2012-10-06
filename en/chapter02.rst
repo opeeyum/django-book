@@ -374,30 +374,36 @@ To do this, navigate to the directory where ``django-admin.py`` is installed
 
 The ``startproject`` command creates a directory containing four files::
 
-    mysite/
-        __init__.py
-        manage.py
-        settings.py
-        urls.py
-
+	mysite/
+    	    manage.py
+            mysite/
+                __init__.py
+                settings.py
+                urls.py
+                wsgi.py
 These files are as follows:
-
-    * ``__init__.py``: A file required for Python to treat the ``mysite``
-      directory as a package (i.e., a group of Python modules). It's an empty
-      file, and generally you won't add anything to it.
+    * ``mysite/``: The outer ``mysite`` directory is just a container for your project.  It's name is does not matter to Django; you can rename it to anything you'd like. 
 
     * ``manage.py``: A command-line utility that lets you interact with this
       Django project in various ways. Type ``python manage.py help`` to get a
       feel for what it can do. You should never have to edit this file; it's
       created in this directory purely for convenience.
 
-    * ``settings.py``: Settings/configuration for this Django project. Take a
+    * The inner ``mysite/`` directory is teh actual Python package for your project. It's name is the Python package name you'll need to import anything inside it (e.g import mysite.settings).
+
+    * ``mysite/__init__.py``: A file required for Python to treat the ``mysite``
+      directory as a package (i.e., a group of Python modules). It's an empty
+      file, and generally you won't add anything to it.
+
+    * ``mysite/settings.py``: Settings/configuration for this Django project. Take a
       look at it to get an idea of the types of settings available, along with
       their default values.
 
-    * ``urls.py``: The URLs for this Django project. Think of this as the
+    * ``mysite/urls.py``: The URLs for this Django project. Think of this as the
       "table of contents" of your Django-powered site. At the moment, it's
       empty.
+
+    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve your project. 
 
 Despite their small size, these files already constitute a working Django
 application.
