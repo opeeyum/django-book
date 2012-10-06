@@ -206,7 +206,7 @@ To install django in a virtual environment with pip::
 
 To install a specific version of Django in a virtual environment with pip, use::
 
-	pip install django==1.3.1
+	pip install django==1.4.1
 
 Notice the `==` necessary to specify a specific version. 
 
