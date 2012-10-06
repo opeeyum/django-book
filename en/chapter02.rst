@@ -175,6 +175,38 @@ improvement or anything else. Among some members of the Django community, it's
 a badge of honor to be able to say, "I've been using Django since [insert very
 low revision number here]."
 
+Installing Django in virtualenv with pip
+----------------------------------------
+To install django in a virtual environment with pip::
+
+	➜  Localrepository  mkdir test
+	➜  Localrepository  cd test 
+	➜  test  virtualenv venv
+	New python executable in venv/bin/python
+	Installing distribute..............done.
+	Installing pip...............done.
+	➜  test  source venv/bin/activate
+	(venv)➜  test  pip install django
+	Downloading/unpacking django
+	 Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
+	 Running setup.py egg_info for package django
+    
+	Installing collected packages: django
+	  Running setup.py install for django
+	    changing mode of build/scripts-2.7/django-admin.py from 644 to 755
+
+	    changing mode of /home/user/test/venv/bin/django-admin.py to 755
+	Successfully installed django
+	Cleaning up...
+
+
+To install a specific version of Django in a virtual environment with pip, use::
+
+	pip install django==1.3.1
+
+Notice the `==` necessary to specify a specific version. 
+
+
 Testing the Django installation
 ===============================
 
