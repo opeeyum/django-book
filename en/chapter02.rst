@@ -179,6 +179,38 @@ improvement or anything else. Among some members of the Django community, it's
 a badge of honor to be able to say, "I've been using Django since [insert very
 low revision number here]."
 
+Installing Django in virtualenv with pip
+----------------------------------------
+To install django in a virtual environment with pip::
+
+	➜  Localrepository  mkdir test
+	➜  Localrepository  cd test 
+	➜  test  virtualenv venv
+	New python executable in venv/bin/python
+	Installing distribute..............done.
+	Installing pip...............done.
+	➜  test  source venv/bin/activate
+	(venv)➜  test  pip install django
+	Downloading/unpacking django
+	 Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
+	 Running setup.py egg_info for package django
+    
+	Installing collected packages: django
+	  Running setup.py install for django
+	    changing mode of build/scripts-2.7/django-admin.py from 644 to 755
+
+	    changing mode of /home/user/test/venv/bin/django-admin.py to 755
+	Successfully installed django
+	Cleaning up...
+
+
+To install a specific version of Django in a virtual environment with pip, use::
+
+	pip install django==1.3.1
+
+Notice the `==` necessary to specify a specific version. 
+
+
 Testing the Django installation
 ===============================
 
@@ -272,7 +304,12 @@ easier to install.
 If you're on Linux, check whether your distribution's package-management
 system offers a package called ``kinterbasdb`` or ``fdb``
 
+Using Django with Postgresql
+----------------------------
 
+If you're using Postgresql, you'll need the `psycopg`_ package. Django 1.3 supports both version 1 and 2. When you configure Django's database layer, specify either postgresql (for version 1) or posgresql_psycopg2 (for version 2). Django >=1.4 supports version 2. psycopg2 can be installed using pip::
+
+	pip install psycopg2
 
 
 
@@ -341,30 +378,36 @@ To do this, navigate to the directory where ``django-admin.py`` is installed
 
 The ``startproject`` command creates a directory containing four files::
 
-    mysite/
-        __init__.py
-        manage.py
-        settings.py
-        urls.py
-
+	mysite/
+    	    manage.py
+            mysite/
+                __init__.py
+                settings.py
+                urls.py
+                wsgi.py
 These files are as follows:
-
-    * ``__init__.py``: A file required for Python to treat the ``mysite``
-      directory as a package (i.e., a group of Python modules). It's an empty
-      file, and generally you won't add anything to it.
+    * ``mysite/``: The outer ``mysite`` directory is just a container for your project.  It's name is does not matter to Django; you can rename it to anything you'd like. 
 
     * ``manage.py``: A command-line utility that lets you interact with this
       Django project in various ways. Type ``python manage.py help`` to get a
       feel for what it can do. You should never have to edit this file; it's
       created in this directory purely for convenience.
 
-    * ``settings.py``: Settings/configuration for this Django project. Take a
+    * The inner ``mysite/`` directory is teh actual Python package for your project. It's name is the Python package name you'll need to import anything inside it (e.g import mysite.settings).
+
+    * ``mysite/__init__.py``: A file required for Python to treat the ``mysite``
+      directory as a package (i.e., a group of Python modules). It's an empty
+      file, and generally you won't add anything to it.
+
+    * ``mysite/settings.py``: Settings/configuration for this Django project. Take a
       look at it to get an idea of the types of settings available, along with
       their default values.
 
-    * ``urls.py``: The URLs for this Django project. Think of this as the
+    * ``mysite/urls.py``: The URLs for this Django project. Think of this as the
       "table of contents" of your Django-powered site. At the moment, it's
       empty.
+
+    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve your project. 
 
 Despite their small size, these files already constitute a working Django
 application.
@@ -438,3 +481,4 @@ Now that you have everything installed and the development server running,
 you're ready to `learn the basics`_ of serving Web pages with Django.
 
 .. _learn the basics: chapter03.html
+.. _psycopg: http://initd.org/psycopg/tarballs/
