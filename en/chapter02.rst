@@ -307,13 +307,12 @@ system offers a package called ``kinterbasdb`` or ``fdb``
 Using Django with Postgresql
 ----------------------------
 
-If you're using Postgresql, you'll need the `psycopg`_ package. Django 1.3 supports both version 1 and 2. When you configure Django's database layer, specify either postgresql (for version 1) or posgresql_psycopg2 (for version 2). Django >=1.4 supports version 2. psycopg2 can be installed using pip::
+If you're using Postgresql, you'll need the `psycopg`_ package. Django 1.3
+supports both version 1 and 2. When you configure Django's database layer,
+specify either postgresql (for version 1) or postgresql_psycopg2 (for version 2).
+Django >=1.4 supports version 2. psycopg2 can be installed using pip::
 
 	pip install psycopg2
-
-
-
-
 
 Using Django Without a Database
 -------------------------------
@@ -481,4 +480,4 @@ Now that you have everything installed and the development server running,
 you're ready to `learn the basics`_ of serving Web pages with Django.
 
 .. _learn the basics: chapter03.html
-.. _psycopg: http://initd.org/psycopg/tarballs/
+.. _psycopg: http://initd.org/psycopg/
