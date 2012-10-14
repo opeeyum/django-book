@@ -760,6 +760,4 @@ make your life easier. We've already covered a few of these: the admin site
 (`Chapter 6`_) and the session/user framework (`Chapter 14`_). The `next chapter`_
 covers more of the "contributed" subframeworks.
 
-.. _Chapter 6: chapter06.html
-.. _Chapter 14: chapter14.html
 .. _next chapter: chapter16.html

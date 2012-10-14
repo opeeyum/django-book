@@ -188,7 +188,9 @@ low revision number here]."
 
 Installing Django in virtualenv with pip
 ----------------------------------------
-To install django in a virtual environment with pip::
+To install django in a virtual environment with pip:
+
+.. code-block:: console
 
     $ mkdir test
     $ cd test
@@ -210,7 +212,9 @@ To install django in a virtual environment with pip::
     Successfully installed django
     Cleaning up...
 
-To install a specific version of Django in a virtual environment with pip, use::
+To install a specific version of Django in a virtual environment with pip, use:
+
+.. code-block:: console
 
     $ pip install django==1.4.1
 
@@ -225,6 +229,8 @@ installation worked. In a command shell, change into another directory (e.g.,
 *not* the directory that contains the ``django`` directory) and start the
 Python interactive interpreter by typing ``python``. If the installation was
 successful, you should be able to import the module ``django``:
+
+.. code-block:: python
 
     >>> import django
     >>> django.VERSION

@@ -53,7 +53,7 @@ the table.
 
     ``template_loader``         The template loader to use when loading the
                                 template. By default, it's
-                                ``django.template.loader``. See Chapter 9 for
+                                ``django.template.loader``. See `Chapter 9`_ for
                                 information on template loaders.
 
     ``template_name``           The full name of a template to use in rendering 

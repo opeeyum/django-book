@@ -45,7 +45,9 @@ with a ".cgi" extension and visit the page in your Web browser. That's it.
 
 Here's an example Python CGI script that displays the ten most recently
 published books from a database. Don't worry about syntax details; just get a
-feel for the basic things it's doing::
+feel for the basic things it's doing:
+
+.. code-block:: python
 
     #!/usr/bin/python
 
@@ -119,7 +121,9 @@ Let's dive in with a quick example that demonstrates the difference between the
 previous approach and a Web framework's approach. Here's how you might write
 the previous CGI code using Django. The first thing to note is that that we
 split it over four Python files (``models.py``, ``views.py``, ``urls.py``) and
-an HTML template (``latest_books.html``)::
+an HTML template (``latest_books.html``).
+
+.. code-block:: python
 
     # models.py (the database tables)
 

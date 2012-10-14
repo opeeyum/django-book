@@ -520,7 +520,7 @@ Django has two ways to load templates:
       If none of the templates exist, a ``TemplateDoesNotExist`` exception will
       be raised.
 
-As covered in Chapter 4, each of these functions by default uses your
+As covered in `Chapter 4`_, each of these functions by default uses your
 ``TEMPLATE_DIRS`` setting to load templates. Internally, however, these
 functions actually delegate to a template loader for the heavy lifting.
 

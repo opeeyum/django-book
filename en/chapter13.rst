@@ -648,7 +648,7 @@ The ``link`` method/attribute can return either an absolute URL (e.g.,
 ``"/blog/"``) or a URL with the fully qualified domain and protocol (e.g.,
 ``"http://www.example.com/blog/"``). If ``link`` doesn't return the domain,
 the syndication framework will insert the domain of the current site,
-according to your ``SITE_ID`` setting. (See Chapter 16 for more on ``SITE_ID``
+according to your ``SITE_ID`` setting. (See `Chapter 16`_ for more on ``SITE_ID``
 and the sites framework.)
 
 Atom feeds require a ``<link rel="self">`` that defines the feed's current
@@ -740,7 +740,7 @@ To install the sitemap application, follow these steps:
        in your ``TEMPLATE_LOADERS`` setting. It's in there by default, so
        you'll need to change this only if you've changed that setting.
     
-    #. Make sure you've installed the sites framework (see Chapter 16).
+    #. Make sure you've installed the sites framework (see `Chapter 16`_).
 
 .. note:: 
 
@@ -866,12 +866,12 @@ defined for the current site and creates an entry in the sitemap. These
 entries include only the ``location`` attribute -- not ``lastmod``,
 ``changefreq``, or ``priority``.
 
-See Chapter 16 for more about flat pages.
+See `Chapter 16`_ for more about flat pages.
 
 GenericSitemap
 ``````````````
 
-The ``GenericSitemap`` class works with any generic views (see Chapter 11) you
+The ``GenericSitemap`` class works with any generic views (see `Chapter 11`_) you
 already have.
 
 To use it, create an instance, passing in the same ``info_dict`` you pass to
@@ -985,5 +985,3 @@ What's Next?
 Next, we'll continue to dig deeper into the built-in tools Django gives you.
 `Chapter 14`_ looks at all the tools you need to provide user-customized
 sites: sessions, users, and authentication.
-
-.. _Chapter 14: chapter14.html

@@ -10,8 +10,6 @@ In `Chapter 3`_, we explained the basics of Django view functions and URLconfs.
 This chapter goes into more detail about advanced functionality in those two
 pieces of the framework.
 
-.. _Chapter 3: ../chapter03/
-
 URLconf Tricks
 ==============
 
@@ -1129,5 +1127,3 @@ What's Next?
 This chapter has provided many advanced tips and tricks for views and URLconfs.
 Next, in `Chapter 9`_, we'll give this advanced treatment to Django's template
 system.
-
-.. _Chapter 9: chapter09.html
