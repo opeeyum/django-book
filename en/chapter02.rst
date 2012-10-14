@@ -27,12 +27,20 @@ inclusive.
 
 If you're not sure which version of Python to install and you have complete
 freedom over the decision, pick the latest one in the 2.x series: version 2.7.
- Plus, certain third-party Django add-ons that you might want to use might require a version newer than
-Python 2.5, so using a later version of Python keeps your options open.
+Plus, certain third-party Django add-ons that you might want to use might
+require a version newer than Python 2.5, so using a later version of Python
+keeps your options open.
 
-.. admonition:: Django and Python 3.X
-	
-	Django 1.4 will drop our support for Python 2.4, establishing a minimum requirement of 2.5. Django 1.5 will then drop Python 2.5 support, 	  setting the minimum at 2.6. Additionally, Django 1.5 will begin the process of porting the codebase, and will -- through the 2/3 		compatibility features in Python 2.6 and 2.7 -- experimentally support Python 3 (we hope to be targeting up to Python 3.3, which is 		expected to be released in roughly the same time frame as Django 1.5). https://www.djangoproject.com/weblog/2012/mar/13/py3k/
+.. admonition:: Django and Python 3.X:
+
+    Django 1.4 will drop our support for Python 2.4, establishing a minimum
+    requirement of 2.5. Django 1.5 will then drop Python 2.5 support, setting
+    the minimum at 2.6. Additionally, Django 1.5 will begin the process of
+    porting the codebase, and will -- through the 2/3 compatibility features in
+    Python 2.6 and 2.7 -- experimentally support Python 3 (we hope to be
+    targeting up to Python 3.3, which is expected to be released in roughly the
+    same time frame as Django 1.5).
+    https://www.djangoproject.com/weblog/2012/mar/13/py3k/
 
     If you're new to Python and are wondering whether to learn Python 2.x or
     Python 3.x, our advice is to start with 2.x and progress after 1.5 release with 3.x.
@@ -44,11 +52,11 @@ If you're on Linux or Mac OS X, you probably have Python already installed.
 Type ``python`` at a command prompt (or in Applications/Utilities/Terminal, in
 OS X). If you see something like this, then Python is installed::
 
-	python
-	Python 2.7.3 (default, Apr 20 2012, 22:39:59) 
-	[GCC 4.6.3] on linux2
-	Type "help", "copyright", "credits" or "license" for more information.
-	>>> 
+    python
+    Python 2.7.3 (default, Apr 20 2012, 22:39:59)
+    [GCC 4.6.3] on linux2
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
 
 
 Otherwise, you'll need to download and install Python. It's fast and easy, and
@@ -183,30 +191,30 @@ Installing Django in virtualenv with pip
 ----------------------------------------
 To install django in a virtual environment with pip::
 
-	➜  Localrepository  mkdir test
-	➜  Localrepository  cd test 
-	➜  test  virtualenv venv
-	New python executable in venv/bin/python
-	Installing distribute..............done.
-	Installing pip...............done.
-	➜  test  source venv/bin/activate
-	(venv)➜  test  pip install django
-	Downloading/unpacking django
-	 Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
-	 Running setup.py egg_info for package django
+    ➜  Localrepository  mkdir test
+    ➜  Localrepository  cd test 
+    ➜  test  virtualenv venv
+    New python executable in venv/bin/python
+    Installing distribute..............done.
+    Installing pip...............done.
+    ➜  test  source venv/bin/activate
+    (venv)➜  test  pip install django
+    Downloading/unpacking django
+     Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
+     Running setup.py egg_info for package django
     
-	Installing collected packages: django
-	  Running setup.py install for django
-	    changing mode of build/scripts-2.7/django-admin.py from 644 to 755
+    Installing collected packages: django
+      Running setup.py install for django
+        changing mode of build/scripts-2.7/django-admin.py from 644 to 755
 
-	    changing mode of /home/user/test/venv/bin/django-admin.py to 755
-	Successfully installed django
-	Cleaning up...
+        changing mode of /home/user/test/venv/bin/django-admin.py to 755
+    Successfully installed django
+    Cleaning up...
 
 
 To install a specific version of Django in a virtual environment with pip, use::
 
-	pip install django==1.4.1
+    pip install django==1.4.1
 
 Notice the `==` necessary to specify a specific version. 
 
@@ -298,7 +306,7 @@ If you're using FirebirdSQL, you'll need to install either the ``kinterbasdb`` o
 recommend ``fdb``, as it's newer, more actively developed and can be
 easier to install.
  
-	pip install fdb
+    pip install fdb
 
 
 If you're on Linux, check whether your distribution's package-management
@@ -312,7 +320,7 @@ supports both version 1 and 2. When you configure Django's database layer,
 specify either postgresql (for version 1) or postgresql_psycopg2 (for version 2).
 Django >=1.4 supports version 2. psycopg2 can be installed using pip::
 
-	pip install psycopg2
+    pip install psycopg2
 
 Using Django Without a Database
 -------------------------------
@@ -377,8 +385,8 @@ To do this, navigate to the directory where ``django-admin.py`` is installed
 
 The ``startproject`` command creates a directory containing four files::
 
-	mysite/
-    	    manage.py
+    mysite/
+            manage.py
             mysite/
                 __init__.py
                 settings.py
