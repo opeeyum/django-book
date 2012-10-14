@@ -11,7 +11,7 @@ on some cell phones! But this chapter just covers the common scenarios for
 Django installations. We'll assume you're installing it either on a
 desktop/laptop machine or a server.
 
-Later, in Chapter 12, we'll cover how to deploy Django to a production site.
+Later, in `Chapter 12`_, we'll cover how to deploy Django to a production site.
 
 Installing Python
 =================
@@ -190,14 +190,14 @@ Installing Django in virtualenv with pip
 ----------------------------------------
 To install django in a virtual environment with pip::
 
-    ➜  Localrepository  mkdir test
-    ➜  Localrepository  cd test
-    ➜  test  virtualenv venv
+    $ mkdir test
+    $ cd test
+    $ virtualenv venv
     New python executable in venv/bin/python
     Installing distribute..............done.
     Installing pip...............done.
-    ➜  test  source venv/bin/activate
-    (venv)➜  test  pip install django
+    $ source venv/bin/activate
+    $ pip install django
     Downloading/unpacking django
      Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
      Running setup.py egg_info for package django
@@ -210,10 +210,9 @@ To install django in a virtual environment with pip::
     Successfully installed django
     Cleaning up...
 
-
 To install a specific version of Django in a virtual environment with pip, use::
 
-    pip install django==1.4.1
+    $ pip install django==1.4.1
 
 Notice the `==` necessary to specify a specific version.
 
@@ -300,16 +299,14 @@ Setting up the database is a two-step process:
 Using Django with FirebirdSQL
 -----------------------------
 
-If you're using FirebirdSQL, you'll need to install either the ``kinterbasdb`` or
-``fdb`` package from http://pypi.python.org/pypi/fdb. We
-recommend ``fdb``, as it's newer, more actively developed and can be
-easier to install.
+If you're using FirebirdSQL, you'll need to install either the ``kinterbasdb``
+or ``fdb`` package from http://pypi.python.org/pypi/fdb. We recommend ``fdb``,
+as it's newer, more actively developed and can be easier to install. ::
 
     pip install fdb
 
-
 If you're on Linux, check whether your distribution's package-management
-system offers a package called ``kinterbasdb`` or ``fdb``
+system offers a package called ``kinterbasdb`` or ``fdb``.
 
 Using Django with Postgresql
 ----------------------------
@@ -394,28 +391,33 @@ The ``startproject`` command creates a directory containing four files::
 
 These files are as follows:
 
-    * ``mysite/``: The outer ``mysite`` directory is just a container for your project.  It's name is does not matter to Django; you can rename it to anything you'd like.
+    * ``mysite/``: The outer ``mysite`` directory is just a container for your
+      project.  It's name is does not matter to Django; you can rename it to
+      anything you'd like.
 
     * ``manage.py``: A command-line utility that lets you interact with this
-      Django project in various ways. Type ``python manage.py help`` to get a
-      feel for what it can do. You should never have to edit this file; it's
+      Django project in various ways. Type ``python manage.py help`` to get
+      a feel for what it can do. You should never have to edit this file; it's
       created in this directory purely for convenience.
 
-    * The inner ``mysite/`` directory is teh actual Python package for your project. It's name is the Python package name you'll need to import anything inside it (e.g import mysite.settings).
+    * The inner ``mysite/`` directory is teh actual Python package for your
+      project. It's name is the Python package name you'll need to import
+      anything inside it (e.g import mysite.settings).
 
     * ``mysite/__init__.py``: A file required for Python to treat the ``mysite``
       directory as a package (i.e., a group of Python modules). It's an empty
       file, and generally you won't add anything to it.
 
-    * ``mysite/settings.py``: Settings/configuration for this Django project. Take a
-      look at it to get an idea of the types of settings available, along with
-      their default values.
+    * ``mysite/settings.py``: Settings/configuration for this Django project.
+      Take a look at it to get an idea of the types of settings available, along
+      with their default values.
 
     * ``mysite/urls.py``: The URLs for this Django project. Think of this as the
       "table of contents" of your Django-powered site. At the moment, it's
       empty.
 
-    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve your project.
+    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve
+      your project.
 
 Despite their small size, these files already constitute a working Django
 application.
@@ -458,7 +460,7 @@ before proceeding. Although this server is convenient for development, resist
 the temptation to use it in anything resembling a production environment. The
 development server can handle only a single request at a time reliably, and it
 has not gone through a security audit of any sort. When the time comes to
-launch your site, see Chapter 12 for information on how to deploy Django.
+launch your site, see `Chapter 12`_ for information on how to deploy Django.
 
 .. admonition:: Changing the Development Server's Host or Port
 
