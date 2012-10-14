@@ -294,8 +294,9 @@ Django usage, and Chapter 12 covers deployment. The remaining chapters, 13
 through 20, focus on specific Django features and can be read in any order.
 
 The appendixes are for reference. They, along with the free documentation at
-http://www.djangoproject.com/, are probably what you'll flip back to occasionally to
-recall syntax or find quick synopses of what certain parts of Django do.
+http://www.djangoproject.com/, are probably what you'll flip back to
+occasionally to recall syntax or find quick synopses of what certain parts of
+Django do.
 
 Required Programming Knowledge
 ------------------------------
@@ -335,7 +336,7 @@ print by Apress.
 Required Django Version
 -----------------------
 
-This book covers Django 1.x
+This book covers Django |django_target_major_version|.
 
 Django's developers maintain backwards compatibility within "major version"
 numbers. This commitment means that, if you write an application for Django
@@ -348,7 +349,8 @@ three years to release version 1.0. (This is very similar to the compatibility
 policy taken by the Python language itself: code that was written for Python
 2.0 works on Python 2.6, but not necessarily with Python 3.0.)
 
-Given that this book covers 1.3, it should serve you well for some time.
+Given that this book covers |django_target_major_version|, it should serve you
+well for some time.
 
 Getting Help
 ------------
@@ -358,7 +360,8 @@ For help with any aspect of Django -- from installation, to application design,
 to database design, to deployment -- feel free to ask questions online.
 
     * The django-users mailing list is where thousands of Django users hang out
-      to ask and answer questions. Sign up for free at http://www.djangoproject.com/r/django-users.
+      to ask and answer questions. Sign up for free at
+      http://www.djangoproject.com/r/django-users.
 
     * The Django IRC channel is where Django users hang out to chat and help
       each other in real time. Join the fun by logging on to #django on the
@@ -370,8 +373,4 @@ What's Next
 In the `next chapter`_, we'll get started with Django, covering installation and
 initial setup.
 
-.. _Chapter 5: chapter05.html
-.. _Chapter 4: chapter04.html
-.. _Chapter 6: chapter06.html
-.. _Chapter 3: chapter03.html
 .. _next chapter: chapter02.html

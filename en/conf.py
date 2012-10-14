@@ -240,3 +240,28 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+rst_epilog = """
+.. |django_target_major_version| replace:: 1.4
+.. |django_target_minor_version| replace:: 1.4.1
+.. _Chapter 1: chapter01.html
+.. _Chapter 2: chapter02.html
+.. _Chapter 3: chapter03.html
+.. _Chapter 4: chapter04.html
+.. _Chapter 5: chapter05.html
+.. _Chapter 6: chapter06.html
+.. _Chapter 7: chapter07.html
+.. _Chapter 8: chapter08.html
+.. _Chapter 9: chapter09.html
+.. _Chapter 10: chapter10.html
+.. _Chapter 11: chapter11.html
+.. _Chapter 12: chapter12.html
+.. _Chapter 13: chapter13.html
+.. _Chapter 14: chapter14.html
+.. _Chapter 15: chapter15.html
+.. _Chapter 16: chapter16.html
+.. _Chapter 17: chapter17.html
+.. _Chapter 18: chapter18.html
+.. _Chapter 19: chapter19.html
+.. _Chapter 20: chapter20.html
+"""
