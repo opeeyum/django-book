@@ -115,7 +115,7 @@ for third-party libraries. Usually it's in a place like (In Ubuntu 12.04)
 ``/usr/local/lib/python2.7/dist-packages/``.
 
 Installing the "master" Version
-------------------------------
+-------------------------------
 
 The latest and greatest Django development version is referred to as *master*,
 and it's available from Django's git repository. You should consider
