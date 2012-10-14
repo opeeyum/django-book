@@ -9,6 +9,7 @@ Chapters:
 .. toctree::
    :maxdepth: 1
    
+   introduction
    chapter01
    chapter02
    chapter03
