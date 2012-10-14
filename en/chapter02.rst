@@ -52,12 +52,11 @@ If you're on Linux or Mac OS X, you probably have Python already installed.
 Type ``python`` at a command prompt (or in Applications/Utilities/Terminal, in
 OS X). If you see something like this, then Python is installed::
 
-    python
+    $ python
     Python 2.7.3 (default, Apr 20 2012, 22:39:59)
     [GCC 4.6.3] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
-
 
 Otherwise, you'll need to download and install Python. It's fast and easy, and
 detailed instructions are available at http://www.python.org/download/
@@ -92,15 +91,15 @@ local directory you download this file into; the installation process will put
 Django's files in the right place.) Then, unzip it and run ``setup.py install``,
 as you do with most Python libraries.
 
-Here's how the automate process looks on Unix systems using pip:
+Here's how the automate process looks on Unix systems using pip::
 
-    #. ``pip install django``
+    $ pip install django
 
-Here's how tar.gz install process looks on Unix systems:
+Here's how tar.gz install process looks on Unix systems::
 
-    #. ``tar xzvf Django-1.4.x.tar.gz``
-    #. ``cd Django-*``
-    #. ``sudo python setup.py install``
+    $ tar xzvf Django-1.4.x.tar.gz
+    $ cd Django-*
+    $ sudo python setup.py install
 
 On Windows, we recommend using 7-Zip (http://www.djangoproject.com/r/7zip/)
 to unzip ``.tar.gz`` files. Once you've unzipped the file, start up a DOS
