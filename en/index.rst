@@ -42,7 +42,6 @@ Appendix:
    appendixE
    appendixF
    appendixG
-   appendixH
 
 Indices and tables
 ==================

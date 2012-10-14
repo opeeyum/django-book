@@ -83,9 +83,26 @@ on the ``HttpRequest`` instance (see Table G-1). All attributes except
                         Keys and values are strings. See Chapter 14 for more
                         on using cookies.
                     
-    ``FILES``           A dictionary-like object that maps filenames to
-                        ``UploadedFile`` objects. See the Django
-                        documentation for more.
+    ``FILES``           A dictionary-like object containing all uploaded files.
+                        Each key in ``FILES`` is the ``name`` from the
+                        ``<input type="file" name="" />``. Each value in
+                        ``FILES`` is a standard Python dictionary with the
+                        following three keys:
+                    
+                            * ``filename``: The name of the uploaded file,
+                              as a Python string
+                    
+                            * ``content-type``: The content type of the
+                              uploaded file.
+                    
+                            * ``content``: The raw content of the uploaded
+                              file.
+                    
+                        Note that ``FILES`` will contain data only if the
+                        request method was ``POST`` and the ``<form>`` that
+                        posted to the request had
+                        ``enctype="multipart/form-data"``. Otherwise,
+                        ``FILES`` will be a blank dictionary-like object.
                     
     ``META``            A standard Python dictionary containing all available
                         HTTP headers. Available headers depend on the client
