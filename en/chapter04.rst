@@ -1233,7 +1233,7 @@ that activates the ``current_datetime`` view (e.g.,
 ``True`` and you haven't yet created a ``current_datetime.html`` template, you
 should see a Django error page highlighting the ``TemplateDoesNotExist`` error.
 
-.. figure:: missing_template.png
+.. figure:: graphics/chapter04/missing_template.png
    :alt: Screenshot of a "TemplateDoesNotExist" error.
    
    Figure 4-1: The error page shown when a template cannot be found.

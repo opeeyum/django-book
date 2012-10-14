@@ -314,7 +314,7 @@ as ``http://127.0.0.1:8000/goodbye/`` or
 Django displays this message because you requested a URL that's not defined in
 your URLconf.
 
-.. figure:: 404.png
+.. figure:: graphics/chapter03/404.png
    :alt: Screenshot of Django's 404 page.
 
    Figure 3-1. Django's 404 page

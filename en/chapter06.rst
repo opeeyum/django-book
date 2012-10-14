@@ -113,7 +113,7 @@ walkthrough of the basic features.
 
 The first thing you'll see is a login screen, as shown in Figure 6-1.
 
-.. figure:: login.png
+.. figure:: graphics/chapter06/login.png
    :alt: Screenshot of Django's login page.
    
    Figure 6-1. Django's login screen
@@ -130,7 +130,7 @@ default admin-editable models.
 
 .. DWP The screenshot contains books etc too.
 
-.. figure:: admin_index.png
+.. figure:: graphics/chapter06/admin_index.png
    :alt: Screenshot of the Django admin home page.
  
    Figure 6-2. The Django admin home page
@@ -160,7 +160,7 @@ database.
 Click the "Change" link in the "Users" row to load the change list page for
 users.
 
-.. figure:: user_changelist.png
+.. figure:: graphics/chapter06/user_changelist.png
    :alt: Screenshot of the user change list page.
    
    Figure 6-3. The user change list page
@@ -178,7 +178,7 @@ at the top lets you search by username.
 Click the username of the user you created, and you'll see the edit form for
 that user.
 
-.. figure:: user_editform.png
+.. figure:: graphics/chapter06/user_editform.png
    :alt: Screenshot of the user edit form
    
    Figure 6-4. The user edit form
@@ -206,7 +206,7 @@ You'll also notice that the admin interface also handles input validation for
 you. Try leaving a required field blank or putting an invalid date into a date
 field, and you'll see those errors when you try to save, as shown in Figure 6-5.
 
-.. figure:: user_editform_errors.png
+.. figure:: graphics/chapter06/user_editform_errors.png
    :alt: Screenshot of an edit form displaying errors.
    
    Figure 6-5. An edit form displaying errors
@@ -218,7 +218,7 @@ upper-right corner of the window. Every change made through the admin interface
 is logged, and you can examine this log by clicking the History link (see
 Figure 6-6).
 
-.. figure:: user_history.png
+.. figure:: graphics/chapter06/user_history.png
    :alt: Screenshot of an object history page.
 
    Figure 6-6. An object history page
@@ -533,7 +533,7 @@ first name and last name together, as you can see in Figure 6-7.
 
 .. DWP The image is of the change list for a book, not an author.
 
-.. figure:: author_changelist1.png
+.. figure:: graphics/chapter06/author_changelist1.png
    :alt: Screenshot of the author change list page.
 
    Figure 6-7. The author change list page
@@ -585,7 +585,7 @@ now displaying three columns -- the first name, last name and e-mail address.
 In addition, each of those columns is sortable by clicking on the column
 header. (See Figure 6-8.)
 
-.. figure:: author_changelist2.png
+.. figure:: graphics/chapter06/author_changelist2.png
    :alt: Screenshot of the author change list page after list_display.
 
    Figure 6-8. The author change list page after list_display
@@ -612,7 +612,7 @@ name Barney and an author with the last name Hobarson.
 
 .. DWP Again, same screenshot.
 
-.. figure:: author_changelist3.png
+.. figure:: graphics/chapter06/author_changelist3.png
    :alt: Screenshot of the author change list page after search_fields.
 
    Figure 6-9. The author change list page after search_fields
@@ -649,7 +649,7 @@ common cases for filtering by date. Figure 6-10 shows what that looks like.
 
 .. DWP Screenshot needs changing.
 
-.. figure:: book_changelist1.png
+.. figure:: graphics/chapter06/book_changelist1.png
    :alt: Screenshot of the book change list page after list_filter.
 
    Figure 6-10. The book change list page after list_filter
@@ -676,7 +676,7 @@ available years, then drills down into months and individual days.
 
 .. DWP Screenshot again.
 
-.. figure:: book_changelist2.png
+.. figure:: graphics/chapter06/book_changelist2.png
    :alt: Screenshot of the book change list page after date_hierarchy.
 
    Figure 6-11. The book change list page after date_hierarchy
@@ -711,7 +711,7 @@ the records are sorted. (See Figure 6-12.)
 
 .. DWP Different screenshot needed.
 
-.. figure:: book_changelist3.png
+.. figure:: graphics/chapter06/book_changelist3.png
    :alt: Screenshot of the book change list page after ordering.
 
    Figure 6-12. The book change list page after ordering
@@ -806,7 +806,7 @@ the "Chosen authors" box, and vice versa.
 
 .. DWP screenshot!
 
-.. figure:: book_editform1.png
+.. figure:: graphics/chapter06/book_editform1.png
    :alt: Screenshot of the book edit form after adding filter_horizontal.
 
    Figure 6-13. The book edit form after adding filter_horizontal
@@ -849,7 +849,7 @@ the admin with a simple text input box (``<input type="text">``) instead of a
 
 .. DWP Screenshot!
 
-.. figure:: book_editform2.png
+.. figure:: graphics/chapter06/book_editform2.png
    :alt: Screenshot of edit form after raw_id_fields.
 
    Figure 6-14. The book edit form after adding raw_id_fields
