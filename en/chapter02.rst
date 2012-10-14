@@ -33,13 +33,13 @@ keeps your options open.
 
 .. admonition:: Django and Python 3.X:
 
-    Django 1.4 will drop our support for Python 2.4, establishing a minimum
-    requirement of 2.5. Django 1.5 will then drop Python 2.5 support, setting
-    the minimum at 2.6. Additionally, Django 1.5 will begin the process of
-    porting the codebase, and will -- through the 2/3 compatibility features in
-    Python 2.6 and 2.7 -- experimentally support Python 3 (we hope to be
-    targeting up to Python 3.3, which is expected to be released in roughly the
-    same time frame as Django 1.5).
+    Django 1.4 will drop support for Python 2.4, establishing a minimum
+    requirement of  2.5.
+
+    Django 1.5 will then drop Python 2.5 support, setting the minimum at 2.6.
+    Additionally, Django 1.5 will begin the process of porting the codebase, and
+    will experimentally support Python 3, through the 2/3 compatibility features
+    in Python 2.6 and 2.7. From
     https://www.djangoproject.com/weblog/2012/mar/13/py3k/
 
     If you're new to Python and are wondering whether to learn Python 2.x or
@@ -95,7 +95,7 @@ as you do with most Python libraries.
 Here's how the automate process looks on Unix systems using pip:
 
     #. ``pip install django``
-    
+
 Here's how tar.gz install process looks on Unix systems:
 
     #. ``tar xzvf Django-1.4.x.tar.gz``
@@ -145,7 +145,7 @@ To grab the latest Django master, follow these steps:
     #. Locate your Python installation's ``dist-packages`` directory. Usually
        it's in a place like ``./usr/local/lib/python2.7/dist-packages/``. If you have
        no idea, type this command from a command prompt::
-       
+
            python -c 'import sys, pprint; pprint.pprint(sys.path)'
 
        The resulting output should include your ``dist-packages`` directory.
@@ -161,7 +161,7 @@ To grab the latest Django master, follow these steps:
 
 .. admonition:: Tip:
 
-    If ``.pth`` files are new to you, you can learn more about them at 
+    If ``.pth`` files are new to you, you can learn more about them at
     http://www.djangoproject.com/r/python/site-module/.
 
 After downloading from Git and following the preceding steps, there's no
@@ -192,7 +192,7 @@ Installing Django in virtualenv with pip
 To install django in a virtual environment with pip::
 
     ➜  Localrepository  mkdir test
-    ➜  Localrepository  cd test 
+    ➜  Localrepository  cd test
     ➜  test  virtualenv venv
     New python executable in venv/bin/python
     Installing distribute..............done.
@@ -202,7 +202,7 @@ To install django in a virtual environment with pip::
     Downloading/unpacking django
      Downloading Django-1.4.1.tar.gz (7.7Mb): 7.7Mb downloaded
      Running setup.py egg_info for package django
-    
+
     Installing collected packages: django
       Running setup.py install for django
         changing mode of build/scripts-2.7/django-admin.py from 644 to 755
@@ -216,7 +216,7 @@ To install a specific version of Django in a virtual environment with pip, use::
 
     pip install django==1.4.1
 
-Notice the `==` necessary to specify a specific version. 
+Notice the `==` necessary to specify a specific version.
 
 
 Testing the Django installation
@@ -305,7 +305,7 @@ If you're using FirebirdSQL, you'll need to install either the ``kinterbasdb`` o
 ``fdb`` package from http://pypi.python.org/pypi/fdb. We
 recommend ``fdb``, as it's newer, more actively developed and can be
 easier to install.
- 
+
     pip install fdb
 
 
@@ -392,8 +392,10 @@ The ``startproject`` command creates a directory containing four files::
                 settings.py
                 urls.py
                 wsgi.py
+
 These files are as follows:
-    * ``mysite/``: The outer ``mysite`` directory is just a container for your project.  It's name is does not matter to Django; you can rename it to anything you'd like. 
+
+    * ``mysite/``: The outer ``mysite`` directory is just a container for your project.  It's name is does not matter to Django; you can rename it to anything you'd like.
 
     * ``manage.py``: A command-line utility that lets you interact with this
       Django project in various ways. Type ``python manage.py help`` to get a
@@ -414,7 +416,7 @@ These files are as follows:
       "table of contents" of your Django-powered site. At the moment, it's
       empty.
 
-    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve your project. 
+    * ``mysite/wsgi.py``: An entry-point for WSGI-compatible webservers to serve your project.
 
 Despite their small size, these files already constitute a working Django
 application.
