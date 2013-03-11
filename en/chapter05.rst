@@ -560,13 +560,13 @@ list, so the setting ends up looking like this::
         # 'django.contrib.sessions.middleware.SessionMiddleware',
         # 'django.contrib.auth.middleware.AuthenticationMiddleware',
     )
-    
+
     INSTALLED_APPS = (
         # 'django.contrib.auth',
         # 'django.contrib.contenttypes',
         # 'django.contrib.sessions',
         # 'django.contrib.sites',
-        'mysite.books',
+        'books',
     )
 
 (As we mentioned last chapter when setting ``TEMPLATE_DIRS``, you'll need to be
@@ -575,9 +575,8 @@ single-element tuple. By the way, this book's authors prefer to put a comma
 after *every* element of a tuple, regardless of whether the tuple has only a
 single element. This avoids the issue of forgetting commas, and there's no
 penalty for using that extra comma.)
-    
-``'mysite.books'`` refers to the ``books`` app we're working on. Each app in
-``INSTALLED_APPS`` is represented by its full Python path -- that is, the path
+
+Each app in ``INSTALLED_APPS`` is represented by its full Python path -- that is, the path
 of packages, separated by dots, leading to the app package.
 
 Now that the Django app has been activated in the settings file, we can create
