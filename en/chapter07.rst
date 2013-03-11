@@ -603,6 +603,7 @@ We'll start with our template, ``contact_form.html``.
         {% endif %}
 
         <form action="/contact/" method="post">
+            {% csrf_token %}
             <p>Subject: <input type="text" name="subject"></p>
             <p>Your e-mail (optional): <input type="text" name="email"></p>
             <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
@@ -624,6 +625,7 @@ this::
     from django.core.mail import send_mail
     from django.http import HttpResponseRedirect
     from django.shortcuts import render
+    from django.template import RequestContext
 
     def contact(request):
         errors = []
@@ -643,9 +645,11 @@ this::
                 )
                 return HttpResponseRedirect('/contact/thanks/')
         return render(request, 'contact_form.html',
-            {'errors': errors})
+            {'errors': errors}, context_instance=RequestContext(request))
 
 .. SL Tested ok (modulo email config and lack of thanks view)
+
+#todo - explain CSRF token
 
 (If you're following along, you may be wondering whether to put this view in
 the ``books/views.py`` file. It doesn't have anything to do with the books
