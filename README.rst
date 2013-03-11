@@ -13,22 +13,42 @@ work to be done!*
 Goals
 -----
 
-The goal is to overhaul this book with Django 1.4 compatibility and hopefully
+The goal is to overhaul this book with Django 1.5 compatibility and hopefully
 keep it up to date with Django 1.5 and beyond!
 
-- Update content and project idioms to be Django 1.4 compatible
+- Update content and project idioms to be Django 1.5 compatible
+- Approach Django advice with a pragmatic attitude, that respects the times and
+  tools currently available.
 - Remove deprecated Django 1.2 and 1.3 content/idioms
-- Work toward a release that is peer reviewed before Django 1.5 launches
-- Repeat for Django 1.5 and beyond!
+- Work toward a release that is peer reviewed before Django 1.6 launches
+- Repeat for Django 1.7 and beyond!
 
 Current Status
 --------------
 
 The latest version is always available at ReadTheDocs: http://django-book.readthedocs.org/en/latest/
 
-See the project milestones for more current status: https://github.com/askedrelic/django-book/issues/milestones
+See the project issues for more current status: https://github.com/askedrelic/django-book/issues
 
-Sept 2012, still groundwork organization being laid. Much of the book has not been vetted.
+Errata
+-------
+
+This book is a fork from the original source code used in the Djagno 1.0 book.
+Multiple forks exist and code/advice may be in different states of progress.
+
+- https://github.com/askedrelic/django-book is a fork with the goal of updating
+  the Django Book with pragmatic advice from current Django practices. It lives
+  at http://django-book.readthedocs.org/en/latest/index.html
+
+- https://github.com/mariuz/django-book is the original fork, which was created
+  by importing the original Djagno Book SVN code repository and history.
+  (AskedRelic's version was forked from this version).
+
+- https://github.com/jacobian/djangobook.com is a newer fork, from the
+  original author of the Django Book. Code/ideas from this fork have tried to be
+  incorporated in AskedRelic's fork, but it is a seperate entity. It lives at
+  https://github.com/jacobian/djangobook.com
+
 
 Development
 -----------
