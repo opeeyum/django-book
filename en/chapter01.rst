@@ -117,7 +117,7 @@ The MVC Design Pattern
 
 Let's dive in with a quick example that demonstrates the difference between the
 previous approach and a Web framework's approach. Here's how you might write
-the previous CGI code using Django. The first thing to note is that that we
+the previous CGI code using Django. The first thing to note is that we
 split it over four Python files (``models.py``, ``views.py``, ``urls.py``) and
 an HTML template (``latest_books.html``).
 
