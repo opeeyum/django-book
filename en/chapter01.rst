@@ -45,20 +45,23 @@ with a ".cgi" extension and visit the page in your Web browser. That's it.
 
 Here's an example Python CGI script that displays the ten most recently
 published books from a database. Don't worry about syntax details; just get a
-feel for the basic things it's doing::
+feel for the basic things it's doing
+
+.. testcode::
 
     #!/usr/bin/env python
 
-    import MySQLdb
-
+    import sqlite3
+    connection = sqlite3.connect(':memory:')
     print "Content-Type: text/html\n"
     print "<html><head><title>Books</title></head>"
     print "<body>"
     print "<h1>Books</h1>"
     print "<ul>"
 
-    connection = MySQLdb.connect(user='me', passwd='letmein', db='my_db')
     cursor = connection.cursor()
+    cursor.execute("CREATE TABLE books (name text, pub_date text);")
+    cursor.execute("INSERT INTO books VALUES ('Django','2013-01-01')")
     cursor.execute("SELECT name FROM books ORDER BY pub_date DESC LIMIT 10")
 
     for row in cursor.fetchall():
@@ -68,6 +71,18 @@ feel for the basic things it's doing::
     print "</body></html>"
 
     connection.close()
+.. testoutput::
+    :hide:
+
+    Content-Type: text/html
+
+    <html><head><title>Books</title></head>
+    <body>
+    <h1>Books</h1>
+    <ul>
+    <li>Django</li>
+    </ul>
+    </body></html>
 
 First, to fulfill the requirements of CGI, this code prints a "Content-Type"
 line, followed by a blank line. It prints some introductory HTML, connects to a
