@@ -691,7 +691,7 @@ creates the tables if they don't yet exist. Note that ``syncdb`` does *not*
 sync changes in models or deletions of models; if you make a change to a model
 or delete a model, and you want to update the database, ``syncdb`` will not
 handle that. (More on this in the "Making Changes to a Database Schema" section
-toward the end of this chapter.)
+in Chapter 10.)
 
 If you run ``python manage.py syncdb`` again, nothing happens, because you
 haven't added any models to the ``books`` app or added any apps to
