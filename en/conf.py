@@ -13,6 +13,8 @@
 
 import sys, os
 
+from setuptools.command import easy_install
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -91,7 +93,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+#html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -265,3 +267,17 @@ rst_epilog = """
 .. _Chapter 19: chapter19.html
 .. _Chapter 20: chapter20.html
 """
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+# On RTD we can't import sphinx_rtd_theme, but it will be applied by
+# default anyway.  This block will use the same theme when building locally
+# as on RTD.
+if not on_rtd:
+    try:
+        import sphinx_rtd_theme
+    except ImportError:
+        easy_install.main(["sphinx_rtd_theme"])
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    
